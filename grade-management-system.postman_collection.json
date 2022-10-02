@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "40a0b46e-d315-4eab-80f0-016c58d950b5",
+		"name": "grade-management-system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23533043"
+	},
+	"item": [
+		{
+			"name": "Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Jon 1\",\n    \"lastName\": \"Doe 1 \",\n    \"grade\": \"B+\",\n    \"subject\": \"Data Sci\"\n}\n\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Jon 1\",\n    \"lastName\": \"Doe 1 \",\n    \"grade\": \"B+\",\n    \"subject\": \"Data Sci I\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/student/4afa50a0-4257-11ed-a13f-f3ebc264e598",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"4afa50a0-4257-11ed-a13f-f3ebc264e598"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/student/4afa50a0-4257-11ed-a13f-f3ebc264e598",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"4afa50a0-4257-11ed-a13f-f3ebc264e598"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
